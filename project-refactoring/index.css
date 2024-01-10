@@ -16,6 +16,7 @@ body {
 	font-family: serif;
 	height: 100vh;
 	text-align: center;
+	font-family: 'Nunito', sans-serif;
 }
 
 header {
@@ -38,6 +39,14 @@ ul {
 	padding: 0;
 }
 
+a {
+	text-decoration: none;
+}
+
+p {
+	line-height: 1.4em;
+}
+
 a.logo {
 	font-weight: bold;
 	margin: 0 1em;
@@ -46,10 +55,10 @@ a.logo {
 a.cta-btn {
 	margin-left: auto;
 	background: #fc85ae;
-	padding: 1em;
+	padding: 0.2em 0.4em;
 	display: inline-block;
-	border-radius: 2em;
-	font-size: 0.6em;
+	border-radius: 0.2em;
+	font-size: 0.9em;
 	color: #303a52;
 	font-weight: bold;
 }
@@ -67,7 +76,7 @@ nav {
 	transform: translateX(-50%);
 	opacity: 0;
 	transition: all 0.3s;
-	text-align: center;
+	text-align: left;
 }
 
 nav p {
@@ -81,8 +90,8 @@ nav svg {
 
 nav ul li a {
 	display: block;
-	padding: 0.2em;
-	font-size: 1.8em;
+	padding: 0.8em 1em;
+	font-size: 1.2em;
 }
 
 .selected {
@@ -95,6 +104,10 @@ nav ul li a {
 	transform: translateX(0);
 }
 
+.inner-wrapper {
+	padding: 1em;
+}
+
 /* Main Section */
 
 h1 {
@@ -105,12 +118,14 @@ h1 {
 .panel {
 	background: #39445f;
 	border-radius: 0.3em;
+	padding: 0.5em 1em;
+	margin-bottom: 2em;
 }
 
 h3 {
 	color: #fc85ae;
 	margin: 0;
-	font-size: 2em;
+	font-size: unset;
 }
 
 ul.data li p {
@@ -130,6 +145,30 @@ ul.secondary li p {
 	font-size: 1.3em;
 }
 
-main {
-	border: 1px solid white;
+/* Large Phones */
+
+@media (min-width: 420px) {
+	body {
+		padding: 1em;
+		text-align: left;
+	}
+	ul.data {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	ul.data li {
+		flex: 0 0 50%;
+	}
+}
+
+@media (min-width: 550px) {
+	ul.data {
+		justify-content: center;
+	}
+	.panel ul.data li {
+		flex: 0 0 33%;
+	}
+	.panel ul.data li p {
+		margin-bottom: 0;
+	}
 }
