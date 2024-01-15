@@ -65,7 +65,7 @@ ul li a {
 }
 
 .active a {
-	color: #217c4f;
+	color: #215a2b;
 }
 
 main {
@@ -188,6 +188,63 @@ p {
 
 	.outline {
 		margin-left: 1em;
+	}
+}
+
+@media (min-width: 850px) {
+	body {
+		background-color: white;
+		overflow-x: hidden;
+	}
+
+	.left-col {
+		width: 60%;
+		background: #aadfc5;
+		position: absolute;
+		top: 0;
+		height: 100vh;
+		z-index: -1;
+	}
+
+	main {
+		text-align: left;
+		width: 90%;
+		margin-left: 2em;
+	}
+
+	p {
+		width: 50%;
+		margin: 0 0 1.4em 0;
+	}
+
+	.btn-container {
+		justify-content: left;
+	}
+
+	h1:before {
+		width: 10%;
+		left: 0;
+	}
+
+	.content-wrapper {
+		display: flex;
+	}
+
+	.plant-container {
+		position: unset;
+		width: auto;
+		height: auto;
+		display: grid;
+		place-content: center;
+		margin-right: 2em;
+	}
+
+	.plant {
+		width: 70%;
+	}
+
+	.active a {
+		color: #215a2b;
 	}
 }
 
