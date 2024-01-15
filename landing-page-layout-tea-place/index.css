@@ -1,14 +1,209 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
 html,
 body {
 	margin: 0;
 	padding: 0;
 }
 
+body {
+	background: #aadfc5;
+	font-family: 'Montserrat';
+	height: 100vh;
+}
+
+a {
+	color: #7a4900;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.logo {
+	text-transform: uppercase;
+}
+
+header {
+	display: flex;
+	padding: 1em;
+	justify-content: space-between;
+}
+
+.menu {
+	width: 1.5em;
+	cursor: pointer;
+}
+
+ul {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: white;
+	height: 100vh;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: none;
+	place-content: center;
+	z-index: 1;
+}
+
+ul li a {
+	color: black;
+	padding: 2em;
+	display: block;
+	font-size: 1.4em;
+	margin-left: -4em;
+}
+
+.exit svg {
+	width: 1.5em;
+	position: absolute;
+	top: 1em;
+	right: 2em;
+	cursor: pointer;
+}
+
+.active a {
+	color: #217c4f;
+}
+
+main {
+	padding: 1em;
+	text-align: center;
+}
+
+h1 {
+	font-size: 1.5rem;
+	position: relative;
+	margin-top: 3em;
+}
+h1:before {
+	content: '';
+	position: absolute;
+	width: 30%;
+	height: 7px;
+	top: -20px;
+	left: 33%;
+	background-color: #7a4900;
+}
+
+p {
+	font-size: 0.9rem;
+	line-height: 1.4em;
+	width: 90%;
+	margin: 0 auto 2em;
+}
+
+.cta {
+	display: block;
+	padding: 0.7em;
+	margin-bottom: 1em;
+	background-color: #7a4900;
+	color: white;
+	white-space: nowrap;
+}
+
+.outline {
+	background: none;
+	border: 2px solid #47946e;
+	color: black;
+}
+
+.plant-container {
+	overflow: hidden;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: -1;
+}
+
+.plant {
+	width: 350px;
+	position: absolute;
+	right: -1%;
+	bottom: 0;
+}
+
+.open-nav {
+	display: grid;
+}
+
+.fern img {
+	height: 70vh;
+	width: 70%;
+}
+
+.fern {
+	position: absolute;
+	top: 10%;
+	left: 0;
+	z-index: -1;
+	opacity: 0.1;
+	margin: 0;
+}
+
+@media (min-width: 500px) {
+	body {
+		font-size: 18px;
+	}
+
+	.menu,
+	.exit {
+		display: none;
+	}
+
+	ul {
+		display: flex;
+		background: none;
+		height: unset;
+		position: unset;
+		text-transform: uppercase;
+	}
+
+	ul li a {
+		font-size: 0.9em;
+		margin-left: unset;
+		padding: 0 0.5rem;
+	}
+
+	h1 {
+		font-size: 2.5em;
+	}
+
+	p {
+		font-size: 1em;
+	}
+
+	.btn-container {
+		display: flex;
+		justify-content: center;
+	}
+
+	.cta {
+		padding: 0.7em 1.2em;
+	}
+
+	.outline {
+		margin-left: 1em;
+	}
+}
+
 /*
 Colors:
-#AAADFC5
+#AADFC5
 #47946E
 #7A4900
 black
 white
+
+- White Space
+- Color
+- Contrast
+- Scale
+- Alignment
+- Typography
+- Visual Hierarchy
 */
