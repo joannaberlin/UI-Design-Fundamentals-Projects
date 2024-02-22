@@ -181,3 +181,11 @@ li img {
 		font-size: 17px;
 	}
 }
+
+.cta {
+	transition: background 0.3s;
+}
+
+.cta:hover {
+	background: #149a60;
+}
