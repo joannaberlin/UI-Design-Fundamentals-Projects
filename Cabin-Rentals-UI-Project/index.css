@@ -53,3 +53,19 @@ nav ul {
 	padding-top: 5em;
 	z-index: 100;
 }
+
+nav ul li a {
+	color: black;
+	font-size: 1.5em;
+	font-weight: bold;
+	padding: 1em;
+	display: block;
+}
+
+.exit a {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
