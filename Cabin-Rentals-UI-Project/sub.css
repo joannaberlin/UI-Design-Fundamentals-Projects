@@ -1,0 +1,6 @@
+.sub-hero {
+	background: url('images/forest-bg-2.jpg');
+	background-size: cover;
+	height: 70vh;
+	object-position: bottom;
+}
